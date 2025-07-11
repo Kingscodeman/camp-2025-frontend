@@ -13,63 +13,66 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
             min-height: 100vh;
             padding: 20px;
-            color: #333;
+            color: #f3f4f6;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(34, 39, 46, 0.95);
             backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            padding: 32px;
         }
 
         h1 {
             text-align: center;
-            color: #5a67d8;
+            color: #90cdf4;
             margin-bottom: 30px;
             font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
         }
 
         .add-todo-section {
-            background: #f8f9ff;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-            border: 2px solid #e2e8f0;
+            background: #23272f;
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 32px;
+            border: 2px solid #374151;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
 
         label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
             font-weight: 600;
-            color: #4a5568;
+            color: #a0aec0;
         }
 
         input[type="text"], textarea, select {
             width: 100%;
             padding: 12px;
-            border: 2px solid #e2e8f0;
+            border: 2px solid #374151;
             border-radius: 10px;
             font-size: 16px;
-            transition: all 0.3s ease;
-            background: white;
+            transition: all 0.3s;
+            background: #1a202c;
+            color: #f3f4f6;
         }
 
         input[type="text"]:focus, textarea:focus, select:focus {
             outline: none;
-            border-color: #5a67d8;
-            box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.1);
+            border-color: #90cdf4;
+            box-shadow: 0 0 0 3px rgba(144,205,244,0.15);
         }
 
         textarea {
@@ -88,85 +91,93 @@
         }
 
         .btn {
-            background: linear-gradient(135deg, #5a67d8, #667eea);
-            color: white;
+            background: linear-gradient(135deg, #4299e1, #805ad5);
+            color: #fff;
             border: none;
-            padding: 12px 20px;
-            border-radius: 10px;
+            padding: 13px 22px;
+            border-radius: 12px;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s;
             text-transform: uppercase;
             letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(66,153,225,0.15);
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(90, 103, 216, 0.3);
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 8px 24px rgba(66,153,225,0.25);
+            background: linear-gradient(135deg, #63b3ed, #9f7aea);
         }
 
         .btn:active {
-            transform: translateY(0);
+            transform: translateY(0) scale(1);
         }
 
         .btn-small {
             padding: 8px 15px;
             font-size: 14px;
             margin: 0 5px;
+            border-radius: 8px;
         }
 
         .btn-edit {
-            background: linear-gradient(135deg, #48bb78, #38a169);
+            background: linear-gradient(135deg, #38b2ac, #2c7a7b);
         }
 
         .btn-edit:hover {
-            box-shadow: 0 5px 15px rgba(72, 187, 120, 0.3);
+            background: linear-gradient(135deg, #4fd1c5, #285e61);
+            box-shadow: 0 5px 15px rgba(72, 187, 120, 0.2);
         }
 
         .btn-delete {
-            background: linear-gradient(135deg, #f56565, #e53e3e);
+            background: linear-gradient(135deg, #f56565, #c53030);
         }
 
         .btn-delete:hover {
-            box-shadow: 0 5px 15px rgba(245, 101, 101, 0.3);
+            background: linear-gradient(135deg, #fc8181, #9b2c2c);
+            box-shadow: 0 5px 15px rgba(245, 101, 101, 0.2);
         }
 
         .btn-load {
-            background: linear-gradient(135deg, #38b2ac, #319795);
+            background: linear-gradient(135deg, #805ad5, #4299e1);
             width: 100%;
             margin-bottom: 20px;
         }
 
         .btn-load:hover {
-            box-shadow: 0 10px 20px rgba(56, 178, 172, 0.3);
+            background: linear-gradient(135deg, #9f7aea, #63b3ed);
+            box-shadow: 0 10px 20px rgba(128,90,213,0.2);
         }
 
         .todos-section {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            border: 2px solid #e2e8f0;
+            background: #23272f;
+            border-radius: 18px;
+            padding: 22px;
+            border: 2px solid #374151;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
         }
 
         .todo-item {
-            background: #f8f9ff;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
+            background: #1a202c;
+            border-radius: 14px;
+            padding: 22px;
+            margin-bottom: 16px;
+            border: 1px solid #374151;
+            transition: all 0.2s;
             position: relative;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
         }
 
         .todo-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 8px 28px rgba(66,153,225,0.08);
         }
 
         .todo-item.completed {
-            background: #f0fff4;
-            border-color: #9ae6b4;
+            background: #22543d;
+            border-color: #38a169;
         }
 
         .todo-item.completed .todo-title {
@@ -182,31 +193,32 @@
         }
 
         .todo-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #2d3748;
+            font-size: 19px;
+            font-weight: 700;
+            color: #f3f4f6;
             margin: 0;
         }
 
         .priority-badge {
-            padding: 4px 12px;
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 13px;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
         }
 
-        .priority-1 { background: #fed7d7; color: #c53030; }
-        .priority-2 { background: #feebc8; color: #dd6b20; }
-        .priority-3 { background: #fefcbf; color: #d69e2e; }
-        .priority-4 { background: #c6f6d5; color: #38a169; }
-        .priority-5 { background: #bee3f8; color: #3182ce; }
+        .priority-1 { background: #c53030; color: #fff; }
+        .priority-2 { background: #b7791f; color: #fff; }
+        .priority-3 { background: #d69e2e; color: #23272f; }
+        .priority-4 { background: #38a169; color: #fff; }
+        .priority-5 { background: #3182ce; color: #fff; }
 
         .todo-description {
-            color: #718096;
+            color: #a0aec0;
             margin-bottom: 15px;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         .todo-actions {
@@ -217,38 +229,39 @@
 
         .completed-badge {
             position: absolute;
-            top: -5px;
-            right: -5px;
+            top: -8px;
+            right: -8px;
             background: #38a169;
             color: white;
             border-radius: 50%;
-            width: 25px;
-            height: 25px;
+            width: 28px;
+            height: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: bold;
+            box-shadow: 0 2px 8px rgba(56,161,105,0.3);
         }
 
         .empty-state {
             text-align: center;
-            color: #a0aec0;
+            color: #718096;
             font-size: 18px;
             padding: 40px;
         }
 
         .loading {
             text-align: center;
-            color: #5a67d8;
+            color: #90cdf4;
             font-size: 16px;
             padding: 20px;
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 20px;
-                margin: 10px;
+                padding: 16px;
+                margin: 8px;
             }
             
             .form-row {
